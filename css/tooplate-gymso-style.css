@@ -785,10 +785,9 @@ https://www.tooplate.com/view/2119-gymso-fitness
   }
 
   #contact {
-    background-color: #fff;
     background-size: cover;
     background-position: center;
-    background-image: url(../images/web-4.jpg);
+    background-image: url(/images/web-4.jpg);
   }
 
 
