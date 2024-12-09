@@ -542,10 +542,11 @@ https://www.tooplate.com/view/2119-gymso-fitness
   /*---------------------------------------
      CONTACT              
   -----------------------------------------*/
-
+/*
   #contact {
-   /* background-color: #00b7ff; */
+    background-color: #00b7ff;
   }
+*/
 
   .webform input,
   button#submit-button {
@@ -704,6 +705,16 @@ https://www.tooplate.com/view/2119-gymso-fitness
 
 
 
+
+
+
+
+
+
+
+
+
+
 /* CELULAR */
 @media (max-width: 750px) {
   
@@ -747,6 +758,12 @@ https://www.tooplate.com/view/2119-gymso-fitness
 }
 
 
+.class-thumb img {
+  width: 100%;
+  height: 30vh;
+}
+
+
 
 
 /*DEDO */
@@ -768,6 +785,42 @@ https://www.tooplate.com/view/2119-gymso-fitness
 }
 
 
+
+
+
+/* IMG */
+
+.img-fluid {
+   width: 70%;
+   margin: 0 auto;
+   display: block;
+   border-radius: 20px;
+   padding: 10px;
+}
+
+.team-info {
+  text-align: center;
+}
+
+
+
+
+#section-img {
+  background-color: #00b7ff;
+}
+
+
+#about {
+  background-position: 80%;
+  background-size: cover;
+  background-image: url(../images/web-6.jpg);
+}
+
+
+
+
+
+
 }
 
 
@@ -787,8 +840,64 @@ https://www.tooplate.com/view/2119-gymso-fitness
   #contact {
     background-size: cover;
     background-position: center;
-    background-image: url(/images/web-4.jpg);
+    background-image: url(../images/web-4.jpg);
   }
 
+
+
+  
+  #about {
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/web-6.jpg);
+  }
+
+  .team-thumb {
+    position: relative;
+    right: 40%;
+  }
+
+  .team-thumb img {
+    border: 6px solid #fff;
+    
+    
+  }
+
+
+
+
+  #class {
+    background-position: center;
+    background-size: cover;
+    background: linear-gradient(to bottom, 
+    #fff 0%,       /* Blanco comienza */
+    #fff 10%,      /* Blanco ocupa el 10% superior */
+    #00b7ff 50%,   /* Azul puro en el centro */
+    #fff 90%,      /* Blanco empieza de nuevo al 90% */
+    #fff 100%      /* Blanco termina */
+  );
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* TABLET */
+@media (min-width: 751px) and (max-width: 1000px) {
+
+
+  .team-thumb {
+    position: relative;
+    left: 50%;
+  }
 
 }
