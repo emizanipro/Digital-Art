@@ -6,17 +6,18 @@ document.addEventListener('DOMContentLoaded', function () {
         // Obtenemos los valores del formulario
         const name = document.querySelector('input[name="cf-name"]').value.trim();
         const email = document.querySelector('input[name="cf-email"]').value.trim();
+        const webType = document.querySelector('select[name="cf-web-type"]').value.trim();
         const message = document.querySelector('textarea[name="cf-message"]').value.trim();
 
         // Validar que los campos no estén vacíos
-        if (!name || !email || !message) {
+        if (!name || !email || !webType || !message) {
             alert("Por favor, completa todos los campos.");
             return;
         }
 
         // Preparar mensaje de WhatsApp
         const whatsappMessage = encodeURIComponent(
-            `*Presupuesto Rápido*\n\nNombre: ${name}\nEmail: ${email}\nMensaje: ${message}`
+            `*Presupuesto Rápido*\n\nNombre: ${name}\nEmail: ${email}\nTipo de Web: ${webType}\nMensaje: ${message}`
         );
 
         // URL de WhatsApp con el número de destino
